@@ -8,7 +8,7 @@ Para garantir que o compilador não parasse ao encontrar o primeiro erro, foi im
 - Analisador Léxico
 Criado no trabalho 1 ele é responsável por transformar a entrada em um token. Implementado como uma Máquina de Estados Finitos através de um switch-case sobre a variável estado.
 
-Tratamento de Arquivo: Foi implementada uma técnica de "Sentinela" na função readFile, alocando bytes extras no buffer para garantir que o Lexer processe corretamente tokens numéricos situados exatamente no fim do arquivo (tratando o problema de ausência de delimitadores como espaço ou quebra de linha).
+-Tratamento de Arquivo: Foi implementada uma técnica de "Sentinela" na função readFile, alocando bytes extras no buffer para garantir que o Lexer processe corretamente tokens numéricos situados exatamente no fim do arquivo (tratando o problema de ausência de delimitadores como espaço ou quebra de linha).
 
 - Analisador Sintático
 Implementa as regras de produção da gramática.
