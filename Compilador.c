@@ -530,10 +530,11 @@ Token proximo_token()
 }
 
 //Analise sintatica: verifica se o token atual bate com o esperado
-void S();
-void S_linha();
-void C();
-void V();
+void P(); // --- P -> S P | epsilon ---
+void S(); // --- S -> if C then S S' | id relop V ---
+void S_linha(); // --- S' -> else S | epsilon ---
+void C(); // --- C -> V relop V ---
+void V(); // --- V -> id | num ---
 void match(int token_esperado);
 void erro(char *msg);
 void panic(int *tokens_sync, int tam_lista);
